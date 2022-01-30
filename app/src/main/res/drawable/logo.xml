@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/white"/>
+    <item android:drawable="@drawable/ic_background"/>
+    <item
+        android:drawable="@drawable/ic_video_callingblue"
+        android:width="70dp"
+        android:height="70dp"
+        android:top="355dp"
+        android:left="25dp"/>
+    <item
+        android:left="25dp"
+        android:drawable="@drawable/ic_wsr_connect"
+        android:width="170dp"
+        android:height="100dp"
+        android:top="460dp"
+        />
+
+</layer-list>
