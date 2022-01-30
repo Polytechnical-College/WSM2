@@ -26,11 +26,8 @@ class SignIn : AppCompatActivity() {
         }
         binding.signIn.setOnClickListener {
             var url = "http://cinema.areas.su/auth/login"
-            var email = ""
             var emailvalid = Regex("[0-9a-z]@[a-z0-9]+\\.+[a-z]{1,3}$")
-            email = binding.emailedit.text.toString()
-
-
+            var email = binding.emailedit.text.toString()
             var password = binding.emailedit.text.toString()
             formBody = FormBody.Builder()
                 .add("email", email)
@@ -46,7 +43,7 @@ class SignIn : AppCompatActivity() {
                 }
 
                 override fun onResponse(call: Call, response: Response) {
-                    if(response.code == 201){
+                    if(response.code == 200){
                         runOnUiThread {
                             gsonBuilder(response.body!!.string())
                         }
